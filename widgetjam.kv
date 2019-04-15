@@ -1,0 +1,100 @@
+<RobotoButton@Button>:
+	font_name: 'Eczar'
+	font_size: 25
+	bold: True
+	border: (2,2,2,2)
+	background_normal: 'anjay.png'
+	background_down: 'anjay2.png'
+
+<Label>:
+    font_name: 'Eczar'
+    font_size: 40
+    markup: True
+
+
+BoxLayout:
+	orientation: 'vertical'
+
+	Label:
+		id: bagong
+		text : '[b]00[/b]:00:00'
+		font_name: "Eczar"
+
+	BoxLayout:
+		height:90
+		orientation: 'horizontal'
+		padding: 20
+		spacing: 20
+		size_hint: (1, None)
+
+		RobotoButton:
+			id: start_stop
+			text: 'Start'
+			on_press: app.start_stop()
+
+		RobotoButton:
+			text: 'Reset'
+			font_name: 'Eczar'
+			on_press: app.reset()
+
+	Label:
+		id: stopwatch
+		text : '00:00.[size=40]00[/size]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
